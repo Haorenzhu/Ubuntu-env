@@ -12,13 +12,12 @@ tar -zxvf $DIRPATH/eclipse-jee-mars-1-linux-gtk-x86_64.tar.gz
 
 sudo touch /usr/bin/eclipse
 sudo chmod 755 /usr/bin/eclipse
-sed -i "$ a #!/bin/sh" /usr/bin/eclipse    
-sed -i "$ a export ECLIPSE_HOME='/opt/eclipse'" /usr/bin/eclipse
-sed -i "$ a $ECLIPSE_HOME/eclipse $*" /usr/bin/eclipse
+echo "#!/bin/sh" > /usr/bin/eclipse    
+echo 'exec /opt/eclipse/eclipse "$@"' >> /usr/bin/eclipse
 
 # Step 2:
 #   Setting up a desktop icon
-cp ./install/eclipse.desktop /usr/share/applications/
+cp ./eclipse.desktop /usr/share/applications/
 
 # Step 3:
 #   Installing the Sun JDK1.7 and Setting the environment viriables

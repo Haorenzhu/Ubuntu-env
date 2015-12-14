@@ -10,6 +10,6 @@
 # Step 2:   Copy the new sources file to original position.
 
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.old
-sudo cp ./install/sources.list /etc/apt/sources.list
+sudo cp ./sources.list /etc/apt/sources.list
 sudo apt-get update
 sudo apt-get -y upgrade
