@@ -21,7 +21,7 @@ cp ./eclipse.desktop /usr/share/applications/
 
 # Step 3:
 #   Installing the Sun JDK1.7 and Setting the environment viriables
-echo "\n" | sudo add-apt-repository ppa:webupd8team/java
+sudo add-apt-repository -y ppa:webupd8team/java
 sudo apt-get update
 sudo apt-get -y install oracle-java7-installer oracle-java7-set-default
 #sed -i "$ a export JAVA_HOME=/usr/lib/jvm/java-7-oracle/" /etc/environment  
