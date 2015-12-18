@@ -10,7 +10,7 @@ if [ ! -e /opt/eclipse-jee-mars-1-linux-gtk-x86_64 ]; then
     # Step2
     #   Start the pycharm via CLI.
     echo "#!/bin/sh" > /usr/bin/eclipse    
-    echo 'nohup /opt/eclipse/eclipse "$@"&' >> /usr/bin/eclipse
+    echo 'nohup /opt/eclipse/eclipse "$@" >> ~/nohup.out&' >> /usr/bin/eclipse
     chmod a+x /usr/bin/eclipse
 
     # Step 3:

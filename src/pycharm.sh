@@ -10,6 +10,6 @@ if [ ! -e /opt/pycharm-community-5.0.2 ]; then
     # Step 2:
     #   Start the pycharm via CLI.
     echo "#!/bin/sh" > /usr/bin/pycharm
-    echo 'nohup /opt/pycharm-community-5.0.2/bin/pycharm.sh "$@"&' >> /usr/bin/pycharm 
+    echo 'nohup /opt/pycharm-community-5.0.2/bin/pycharm.sh "$@" >> ~/nohup.out &' >> /usr/bin/pycharm 
     chmod a+x /usr/bin/pycharm
 fi
