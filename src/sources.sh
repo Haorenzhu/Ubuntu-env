@@ -8,8 +8,9 @@
 # Step 1:   Backup the original "/etc/apt/sources.list" as the 
 #           "/etc/apt/sources.list.old".
 # Step 2:   Copy the new sources file to original position.
-
-sudo cp /etc/apt/sources.list /etc/apt/sources.list.old
-sudo cp ./sources.list /etc/apt/sources.list
-sudo apt-get update
-sudo apt-get -y upgrade
+if [ ! -e /etc/apt/sources.list.old ]; then
+    cp /etc/apt/sources.list /etc/apt/sources.list.old
+    cp ../etc//sources.list /etc/apt/sources.list
+    apt-get update
+    apt-get -y upgrade
+fi
