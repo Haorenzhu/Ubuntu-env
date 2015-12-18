@@ -1,8 +1,10 @@
 #!/bin/bash
 # Step 1:
 #   Installing the Sun JDK1.8/Openjdk-8 and Setting the environment viriables
-     
- apt-get -y install openjdk-8-jdk
+
+add-apt-repository -y ppa:no1wantdthisname/openjdk-fontfix
+apt-get update     
+apt-get -y install openjdk-8-jdk
      
 #add-apt-repository -y ppa:webupd8team/java
 #apt-get update

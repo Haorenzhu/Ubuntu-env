@@ -6,7 +6,7 @@ The following packages and tools have been INSTALLED and COFIGRATED:
 - **Cmd**. Some common cmd tools have been installed. They are curl, openssh-server, git, python-pip, python3-pip, ipython, ipython3, nautilus-open-teminal
 - **Zsh**. Installing the zsh shell and oh-my-zsh configration.
 - **Vim**. Install Vim and use a popular configuration.
-- **Sougou**. Install the Sougou input method.
+- **Googlepinyin**. Install the Googlepinyin input method.
 - **Chrome**. Install the Chrome web brower.
 - **Shadowsocks**. Install the Shadowsocks-qt5.
 - **Sublime**. Install the Sublime Text3.

@@ -17,7 +17,7 @@ echo e "\033[31m Installing jdk... \033[0m"
 sleep 2; sh jdk.sh
 
 echo -e "\033[31m Installing the Sougou input method... \033[0m";
-sleep 2; sh sougou.sh
+sleep 2; sh googlepinyin.sh
 
 echo -e "\033[31m Installing the Shadowsocks... \033[0m";
 sleep 2; sh shadowsocks.sh
@@ -33,6 +33,3 @@ sleep 2; sh eclipse.sh
 
 echo -e "\033[31m Installing the Pycharm IDE... \033[0m";
 sleep 2; sh pycharm.sh
-
-
-sudo reboot

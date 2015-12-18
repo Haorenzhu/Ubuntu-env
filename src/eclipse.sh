@@ -5,7 +5,7 @@ if [ ! -e /opt/eclipse-jee-mars-1-linux-gtk-x86_64 ]; then
     # Step 1:
     #   Copy the Eclipse Mar release.
     cp ../apt/eclipse-jee-mars-1-linux-gtk-x86_64.tar.gz /opt/
-    tar -zxvf /opt/eclipse-jee-mars-1-linux-gtk-x86_64.tar.gz
+    tar -zxvf /opt/eclipse-jee-mars-1-linux-gtk-x86_64.tar.gz -C /opt/
 
     # Step2
     #   Start the pycharm via CLI.

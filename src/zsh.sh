@@ -9,7 +9,7 @@ wget -qO- https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh 
 #   Installing the zsh-syntax-highlighting for the cmd highlighting
 POS=~/.oh-my-zsh/custom/plugins
 if [ ! -e "$POS/zsh-syntax-highlighting" ]; then
-    git clone git://github.com/zsh-users/zsh-syntax-highlighting.git $POS/
+    git clone git://github.com/zsh-users/zsh-syntax-highlighting.git $POS/zsh-syntax-highlighting
     echo "plugins=(zsh-syntax-highlighting)" > $POS/.zshrc
     echo "source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
     echo "alias ll='ls -alF'" >> ~/.zshrc
